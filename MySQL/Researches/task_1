@@ -2,17 +2,17 @@
 
 A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.
 
-## What is SQL?
+# What is SQL?
 
 SQL (Structured Query Language) is a specialized programming language designed for managing and manipulating data stored in relational databases. It allows users to perform various operations on the data, such as querying, updating, inserting, and deleting records. SQL is widely used in database systems like MySQL, SQL Server, Oracle, and PostgreSQL.
 
-## What is the History of MySQL?
+# What is the History of MySQL?
 
 MySQL, a Swedish company, was credited for being the founder of the MySQL database server. Three engineers—David Axmark, Allan Larsson, and Michael Widenius—started their work on the MySQL server development in 1995. They released their first MySQL server on the same date.
 
 Later, a US tech firm named **Sun Microsystems** took complete ownership after purchasing **MySQL AB**. In 2010, **Oracle**, a US tech giant, acquired Sun Microsystems, making MySQL an Oracle-owned product today.
 
-## What Are the Top 5 Most Famous Databases in the World (2025)?
+# What Are the Top 5 Most Famous Databases in the World (2025)?
 
 As of 2025, the top five most popular database management systems (DBMS) are:
 
