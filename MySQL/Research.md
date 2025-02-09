@@ -37,7 +37,6 @@ When working with databases, **consistent naming conventions** improve **readabi
 - **Consistent primary key naming** → `id` or `tablename_id` ✅  
 - **Avoid special characters and spaces** (use `_` instead)  
 - **Use descriptive column names** → `created_at` ✅ vs `date` ❌
-- 
 ---
 
 ## Resources
