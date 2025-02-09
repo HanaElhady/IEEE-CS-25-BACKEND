@@ -54,7 +54,7 @@ It was introduced by **E.F. Codd** in the 1970s and is the foundation of popular
 | **Security** | No strict integrity constraints | Ensures **ACID** properties (Atomicity, Consistency, Isolation, Durability) |
 | **Relationships** | No relationships between tables | Tables are related using **primary/foreign keys** |
 | **Scalability** | Suitable for small-scale applications | Supports large-scale applications with **multiple users** |
-| **Distributed Database** | ❌ Not supported | ✅ Supported |
+| **Distributed Database** |  Not supported |  Supported |
 | **Examples** | File systems, XML | MySQL, PostgreSQL, SQL Server, Oracle |
 
 **Conclusion**: RDBMS is an **advanced form of DBMS**, offering better **data integrity, security, and scalability**.
@@ -66,11 +66,11 @@ It was introduced by **E.F. Codd** in the 1970s and is the foundation of popular
 When working with databases, **consistent naming conventions** improve **readability and maintainability**.  
 
 ###  Best Practices:
-- **Use lowercase and underscores** → `customer_orders` ✅ vs `CustomerOrders` ❌  
-- **Singular table names** → `user` ✅ vs `users` ❌  
-- **Consistent primary key naming** → `id` or `tablename_id` ✅  
+- **Use lowercase and underscores** → `customer_orders`  vs `CustomerOrders` 
+- **Singular table names** → `user`  vs `users`  
+- **Consistent primary key naming** → `id` or `tablename_id`  
 - **Avoid special characters and spaces** (use `_` instead)  
-- **Use descriptive column names** → `created_at` ✅ vs `date` ❌
+- **Use descriptive column names** → `created_at`  vs `date` 
 ---
 
 ## Resources
