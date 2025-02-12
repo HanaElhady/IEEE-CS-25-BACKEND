@@ -80,4 +80,96 @@ When working with databases, **consistent naming conventions** improve **readabi
 -  [JavaTpoint - Difference Between DBMS and RDBMS](https://www.javatpoint.com/difference-between-dbms-and-rdbms)  
 
 ---
+#  Difference between Primary Key and Unique key
+
+| Comparison Basis | **Primary Key** | **Unique Key** |
+|---------|---------|----------|
+| **Basic** | The primary key is used as a unique identifier for each record in the table | The unique key is also a unique identifier for records when the primary key is not present in the table |
+| **NULL** | We cannot store NULL values in the primary key column | We can store NULL value in the unique key column, but only one NULL is allowed |
+| **Purpose** | It enforces entity integrity | It enforces unique data |
+| **Index** | The primary key, by default, creates clustered index | The unique key, by default, creates a non-clustered index |
+| **Number of Key** | Each table supports only one primary key | A table can have more than one unique key |
+| **Value Modification** | We cannot change or delete the primary key values | We can modify the unique key column values | 
+| **Uses** | It is used to identify each record in the table | It prevents storing duplicate entries in a column except for a NULL value |
+| **Syntax** |  CREATE TABLE Employee
+(
+Id INT PRIMARY KEY,
+name VARCHAR(150),
+address VARCHAR(250)
+)
+ |  CREATE TABLE Person
+(
+Id INT UNIQUE,
+name VARCHAR(150),
+address VARCHAR(250)
+) |
+
+---
+# Constraints in MySQL
+SQL constraints are rules applied to database tables to ensure data integrity, accuracy, and consistency. These constraints prevent invalid data entry and help maintain database reliability.
+
+### Types of SQL Constraints:
+1. **NOT NULL Constraint**
+Ensures that a column cannot contain NULL values.
+
+2. **UNIQUE Constraint**
+Ensures that values in a column are distinct.
+
+3. **PRIMARY KEY Constraint**
+A combination of NOT NULL and UNIQUE that uniquely identifies each row.
+
+4. **FOREIGN KEY Constraint**
+Establishes a relationship between two tables, ensuring referential integrity.
+
+5. **CHECK Constraint**
+Ensures that a column meets specific conditions before inserting data.
+
+6. **DEFAULT Constraint**
+Assigns a default value to a column when no value is provided.
+
+---
+
+# Indexing in MySQL
+## How MySQL Uses Indexes
+Indexes in MySQL improve query performance by allowing faster data retrieval. Without an index, MySQL scans the entire table, which is inefficient for large datasets. With an index, MySQL can locate data quickly, reducing search time.
+
+## Key Uses of Indexes:
+
+**Speeding Up Searches**  Indexes help quickly find rows matching a WHERE clause.
+**Filtering Efficiently** MySQL selects the most selective index to reduce the number of rows scanned.
+**Using Multi-Column Indexes** Any leftmost prefix of a multi-column index can be used for lookups.
+**Optimizing Joins** Indexes speed up joins when columns in related tables have the same data type and size.
+**Handling MIN() & MAX()** MySQL optimizes queries for indexed columns using single key lookups.
+**Sorting & Grouping Faster** Indexes improve ORDER BY and GROUP BY performance when applied to indexed columns.
+**Covering Indexes** If all required columns are in an index, MySQL retrieves data without accessing the table.
+
+## When Not to Use Indexes:
+For small tables where scanning is fast.
+When most rows are needed, as sequential reads may be more efficient than index lookups.
+
+---
+
+# 🌟Difference between MySQL and Postgresql
+
+|---------| PostgreSQL | MySQL |
+|**Large-scale applications**|	✅ Robust & scalable |	⚠️ Limited for heavy loads |
+|**Geospatial data**|	✅ PostGIS support | ⚠️ Basic support |
+|**JSON & NoSQL-like support**|	✅ Strong JSON/JSONB support	| ⚠️ Limited JSON support |
+|**Read-heavy workloads (e.g., web apps)**|	⚠️ Decent, but not optimized |	✅ Excellent performance |
+|**Complex, concurrent read-write operations**|	✅ Superior |	⚠️ May face locking issues |
+|**Quick setup for small web projects**| ⚠️ Takes longer to configure |	✅ Fast & easy setup |
+|**Data warehousing & analytics**|	✅ Excellent indexing & parallel queries	| ⚠️ Lacks advanced features |
+
+## Final Thoughts
+Use PostgreSQL for complex, scalable applications requiring advanced features.
+Use MySQL for lightweight applications with high read performance and ease of setup.
+
+---
+
+## Resources
+
+-  [JavaTpoint - Difference between Primary Key and Unique key](https://www.tpointtech.com/primary-key-vs-unique-key)
+-  [GeeksforGeeks - Constraints in MySQL](https://www.geeksforgeeks.org/sql-constraints/)
+-  [Mysql - Indexing in MySQL](https://dev.mysql.com/doc/refman/8.4/en/mysql-indexes.html)
+-  [Datacamp - Difference between MySQL and Postgresql ](https://www.datacamp.com/blog/postgresql-vs-mysql)
 
