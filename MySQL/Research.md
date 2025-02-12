@@ -91,18 +91,6 @@ When working with databases, **consistent naming conventions** improve **readabi
 | **Number of Key** | Each table supports only one primary key | A table can have more than one unique key |
 | **Value Modification** | We cannot change or delete the primary key values | We can modify the unique key column values | 
 | **Uses** | It is used to identify each record in the table | It prevents storing duplicate entries in a column except for a NULL value |
-| **Syntax** |  CREATE TABLE Employee
-(
-Id INT PRIMARY KEY,
-name VARCHAR(150),
-address VARCHAR(250)
-)
- |  CREATE TABLE Person
-(
-Id INT UNIQUE,
-name VARCHAR(150),
-address VARCHAR(250)
-) |
 
 ---
 # Constraints in MySQL
