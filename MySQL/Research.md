@@ -139,7 +139,8 @@ When most rows are needed, as sequential reads may be more efficient than index 
 
 # 🌟Difference between MySQL and Postgresql
 
-|---------| PostgreSQL | MySQL |
+| | PostgreSQL | MySQL |
+|---------|---------|----------|
 |**Large-scale applications**|	✅ Robust & scalable |	⚠️ Limited for heavy loads |
 |**Geospatial data**|	✅ PostGIS support | ⚠️ Basic support |
 |**JSON & NoSQL-like support**|	✅ Strong JSON/JSONB support	| ⚠️ Limited JSON support |
