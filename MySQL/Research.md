@@ -118,10 +118,10 @@ Assigns a default value to a column when no value is provided.
 ---
 
 # Indexing in MySQL
-## How MySQL Uses Indexes
+### How MySQL Uses Indexes
 Indexes in MySQL improve query performance by allowing faster data retrieval. Without an index, MySQL scans the entire table, which is inefficient for large datasets. With an index, MySQL can locate data quickly, reducing search time.
 
-## Key Uses of Indexes:
+### Key Uses of Indexes:
 
 **Speeding Up Searches**  Indexes help quickly find rows matching a WHERE clause.
 **Filtering Efficiently** MySQL selects the most selective index to reduce the number of rows scanned.
@@ -131,7 +131,7 @@ Indexes in MySQL improve query performance by allowing faster data retrieval. Wi
 **Sorting & Grouping Faster** Indexes improve ORDER BY and GROUP BY performance when applied to indexed columns.
 **Covering Indexes** If all required columns are in an index, MySQL retrieves data without accessing the table.
 
-## When Not to Use Indexes:
+### When Not to Use Indexes:
 For small tables where scanning is fast.
 When most rows are needed, as sequential reads may be more efficient than index lookups.
 
@@ -141,13 +141,13 @@ When most rows are needed, as sequential reads may be more efficient than index 
 
 | | PostgreSQL | MySQL |
 |---------|---------|----------|
-|**Large-scale applications**|	✅ Robust & scalable |	⚠️ Limited for heavy loads |
+|**Large-scale applications**| ✅ Robust & scalable | ⚠️ Limited for heavy loads |
 |**Geospatial data**|	✅ PostGIS support | ⚠️ Basic support |
 |**JSON & NoSQL-like support**|	✅ Strong JSON/JSONB support	| ⚠️ Limited JSON support |
-|**Read-heavy workloads (e.g., web apps)**|	⚠️ Decent, but not optimized |	✅ Excellent performance |
+|**Read-heavy workloads (e.g., web apps)**|	⚠️ Decent, but not optimized | ✅ Excellent performance |
 |**Complex, concurrent read-write operations**|	✅ Superior |	⚠️ May face locking issues |
 |**Quick setup for small web projects**| ⚠️ Takes longer to configure |	✅ Fast & easy setup |
-|**Data warehousing & analytics**|	✅ Excellent indexing & parallel queries	| ⚠️ Lacks advanced features |
+|**Data warehousing & analytics**| ✅ Excellent indexing & parallel queries	| ⚠️ Lacks advanced features |
 
 ## Final Thoughts
 Use PostgreSQL for complex, scalable applications requiring advanced features.
