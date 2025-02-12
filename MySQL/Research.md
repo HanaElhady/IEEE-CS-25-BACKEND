@@ -97,23 +97,23 @@ When working with databases, **consistent naming conventions** improve **readabi
 SQL constraints are rules applied to database tables to ensure data integrity, accuracy, and consistency. These constraints prevent invalid data entry and help maintain database reliability.
 
 ### Types of SQL Constraints:
-1. **NOT NULL Constraint**
-Ensures that a column cannot contain NULL values.
+1. **NOT NULL Constraint** → `
+Ensures that a column cannot contain NULL values. `
 
-2. **UNIQUE Constraint**
-Ensures that values in a column are distinct.
+2. **UNIQUE Constraint** → `
+Ensures that values in a column are distinct. `
 
-3. **PRIMARY KEY Constraint**
-A combination of NOT NULL and UNIQUE that uniquely identifies each row.
+3. **PRIMARY KEY Constraint** → `
+A combination of NOT NULL and UNIQUE that uniquely identifies each row.`
 
-4. **FOREIGN KEY Constraint**
-Establishes a relationship between two tables, ensuring referential integrity.
+4. **FOREIGN KEY Constraint** → `
+Establishes a relationship between two tables, ensuring referential integrity.`
 
-5. **CHECK Constraint**
-Ensures that a column meets specific conditions before inserting data.
+5. **CHECK Constraint** → `
+Ensures that a column meets specific conditions before inserting data.`
 
-6. **DEFAULT Constraint**
-Assigns a default value to a column when no value is provided.
+6. **DEFAULT Constraint** → `
+Assigns a default value to a column when no value is provided.`
 
 ---
 
