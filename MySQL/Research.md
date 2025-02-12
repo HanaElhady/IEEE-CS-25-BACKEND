@@ -123,13 +123,13 @@ Indexes in MySQL improve query performance by allowing faster data retrieval. Wi
 
 ### Key Uses of Indexes:
 
-**Speeding Up Searches** → `  Indexes help quickly find rows matching a WHERE clause.`
-**Filtering Efficiently** → ` MySQL selects the most selective index to reduce the number of rows scanned.`
-**Using Multi-Column Indexes** → ` Any leftmost prefix of a multi-column index can be used for lookups.`
-**Optimizing Joins** → ` Indexes speed up joins when columns in related tables have the same data type and size.`
-**Handling MIN() & MAX()** → ` MySQL optimizes queries for indexed columns using single key lookups.`
-**Sorting & Grouping Faster** → ` Indexes improve ORDER BY and GROUP BY performance when applied to indexed columns.`
-**Covering Indexes** → ` If all required columns are in an index, MySQL retrieves data without accessing the table.`
+1. **Speeding Up Searches** → `  Indexes help quickly find rows matching a WHERE clause.`
+2. **Filtering Efficiently** → ` MySQL selects the most selective index to reduce the number of rows scanned.`
+3. **Using Multi-Column Indexes** → ` Any leftmost prefix of a multi-column index can be used for lookups.`
+4. **Optimizing Joins** → ` Indexes speed up joins when columns in related tables have the same data type and size.`
+5. **Handling MIN() & MAX()** → ` MySQL optimizes queries for indexed columns using single key lookups.`
+6. **Sorting & Grouping Faster** → ` Indexes improve ORDER BY and GROUP BY performance when applied to indexed columns.`
+7. **Covering Indexes** → ` If all required columns are in an index, MySQL retrieves data without accessing the table.`
 
 ### When Not to Use Indexes:
 For small tables where scanning is fast.
