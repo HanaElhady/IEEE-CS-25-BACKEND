@@ -162,3 +162,34 @@ Use MySQL for lightweight applications with high read performance and ease of se
 -  [Mysql - Indexing in MySQL](https://dev.mysql.com/doc/refman/8.4/en/mysql-indexes.html)
 -  [Datacamp - Difference between MySQL and Postgresql ](https://www.datacamp.com/blog/postgresql-vs-mysql)
 
+---
+
+# Relations (one to one, one to many, many to many)
+
+1. **One-to-One Relationship:** Each record in Table A is associated with one and only one record in Table B, and vice versa.
+2. **One-to-Many Relationship:** Each record in Table A can be associated with multiple records in Table B, but each record in Table B is associated with only one record in Table A.
+3. **Many-to-Many Relationship:** Each record in Table A can be associated with multiple records in Table B, and vice versa.
+---
+# Write-ahead logging
+
+`Write-Ahead Logs are a powerful technique that ensures data durability in distributed systems. By persisting every state change as a command in an append-only log, Write-Ahead Logs allow systems to recover their state even after server failures. This durability guarantee is essential for maintaining data consistency and reliability in modern distributed environments.`
+
+---
+
+# What are normalization and denormalization? .
+
+| Basis for Comparison  | Normalization  | Denormalization  |
+|-----------------------|---------------|------------------|
+| **Basic**            | Process of creating a structured schema to store non-redundant and consistent data. | Process of combining data to improve query performance. |
+| **Purpose**         | Reduces data redundancy and inconsistency. | Improves query execution speed by introducing redundancy. |
+| **Used in**         | OLTP systems (focus on insert, update, delete efficiency and data quality). | OLAP systems (focus on fast search and analysis). |
+| **Data Integrity**  | Maintained | May not be retained |
+| **Redundancy**     | Eliminated | Introduced |
+| **Number of Tables** | Increases | Decreases |
+| **Disk Space**      | Optimized usage | Higher usage due to redundancy |
+
+
+## Resource
+- [GeeksforGeeks - Relationships in SQL](https://www.geeksforgeeks.org/relationships-in-sql-one-to-one-one-to-many-many-to-many/)
+- [Medium - Write-ahead logging](https://medium.com/@abhi18632/understanding-write-ahead-logs-in-distributed-systems-3b36892fa3ba)
+- [Tech Differences - Difference between normalization and denormalization](https://techdifferences.com/difference-between-normalization-and-denormalization.html)
