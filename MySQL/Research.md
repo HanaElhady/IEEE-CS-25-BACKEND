@@ -166,13 +166,13 @@ Use MySQL for lightweight applications with high read performance and ease of se
 
 # Relations (one to one, one to many, many to many)
 
-## One-to-One Relationship  
+### One-to-One Relationship  
 Each record in Table A is associated with one and only one record in Table B, and vice versa.  
 
-## One-to-Many Relationship  
+### One-to-Many Relationship  
 Each record in Table A can be associated with multiple records in Table B, but each record in Table B is associated with only one record in Table A.  
 
-## Many-to-Many Relationship  
+### Many-to-Many Relationship  
 Each record in Table A can be associated with multiple records in Table B, and vice versa.  
 
 ---
