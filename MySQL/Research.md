@@ -229,8 +229,8 @@ A **trigger** is a database object that executes a piece of code, a user-defined
 
 # Database Backup
 
- Use the mysqldump program to back up a database on a MySQL server.
-Use the mysql program to restore a database from a backup file created by the mysqldump program.
+- Use the mysqldump program to back up a database on a MySQL server.
+- Use the mysql program to restore a database from a backup file created by the mysqldump program.
 
 ## Resource
 - [GeeksforGeeks - Multiversion Concurrency Control](https://www.geeksforgeeks.org/what-is-multi-version-concurrency-control-mvcc-in-dbms/)
