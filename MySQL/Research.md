@@ -199,3 +199,40 @@ Each record in Table A can be associated with multiple records in Table B, and v
 - [GeeksforGeeks - Relationships in SQL](https://www.geeksforgeeks.org/relationships-in-sql-one-to-one-one-to-many-many-to-many/)
 - [Medium - Write-ahead logging](https://medium.com/@abhi18632/understanding-write-ahead-logs-in-distributed-systems-3b36892fa3ba)
 - [Tech Differences - Difference between normalization and denormalization](https://techdifferences.com/difference-between-normalization-and-denormalization.html)
+
+---
+
+# Multiversion Concurrency Control
+
+Multiversion Concurrency Control (MVCC) in DBMS is a database optimization method, that makes redundant copies of records to allow for safe concurrent reading and updating of data. When many tasks attempt to update the same piece of data simultaneously, MVCC causes a conflict and necessitates a retry from one or more of the processes.
+
+# Triggers in Databases
+
+A **trigger** is a database object that executes a piece of code, a user-defined function, or a stored procedure in response to a specific event in a table.
+
+## Key Points About Triggers:
+- A trigger is always associated with a specific table. If the table is deleted, all the associated triggers are automatically deleted.
+- A trigger is invoked either **before** or **after** the following events:
+  - **INSERT** – when a new row is inserted.
+  - **UPDATE** – when an existing row is updated.
+  - **DELETE** – when a row is deleted.
+  - **TRUNCATE** – when the table is truncated (PostgreSQL).
+
+## How Triggers Work:
+- When you execute an `INSERT`, `UPDATE`, or `DELETE` statement against a table, the relational database management system (RDBMS) fires the corresponding trigger if it exists.
+- In some RDBMS, a trigger is also invoked as the result of executing a statement that indirectly executes the `INSERT`, `UPDATE`, or `DELETE` statement.
+  - For example, MySQL has the `LOAD DATA INFILE` statement, which reads data from a text file and inserts it into a table at a very high speed, invoking the `BEFORE INSERT` and `AFTER INSERT` triggers.
+- On the other hand, a statement may delete rows in a table but does not invoke the associated triggers.
+  - For example, the `TRUNCATE TABLE` statement removes all rows in the table but does not invoke the `BEFORE DELETE` and `AFTER DELETE` triggers. In PostgreSQL, the `TRUNCATE TABLE` statement triggers a `TRUNCATE` trigger.
+
+---
+
+# Database Backup
+
+ Use the mysqldump program to back up a database on a MySQL server.
+Use the mysql program to restore a database from a backup file created by the mysqldump program.
+
+## Resource
+- [GeeksforGeeks - Multiversion Concurrency Control](https://www.geeksforgeeks.org/what-is-multi-version-concurrency-control-mvcc-in-dbms/)
+- [Sql Tutorial - Triggers](https://www.sqltutorial.org/sql-triggers/)
+- [Sql Tutorial - Database Backup](https://www.mysqltutorial.org/mysql-administration/mysql-backup-a-database/)
