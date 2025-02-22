@@ -9,7 +9,6 @@ The Web server returns the page to the IP address specified by the browser reque
 
 The browser collects all the information and displays to your computer in the form of Web page
 
---
 # Difference Between HTTP and HTTPS
 
 | HTTP | HTTPS |
@@ -30,7 +29,6 @@ The browser collects all the information and displays to your computer in the fo
 | HTTP does not require SSL/TLS certificates. | HTTPS requires SSL/TLS implementation with certificates. |
 | In HTTP, users may worry about their data security. | In HTTPS, users are confident about the security of their data. |
 
---
 
 # Web servers
 
@@ -42,7 +40,7 @@ A web server typically consists of:
 
 Web servers can be **static** (delivering fixed content) or **dynamic** (generating content in real time based on user input).  
 
---
+
 # What is DNS?
 
 The **Domain Name System (DNS)** is the phonebook of the Internet. It translates **human-readable domain names** (e.g., `nytimes.com`) into **IP addresses** that computers use to locate and communicate with each other over the web.
@@ -54,7 +52,7 @@ The **Domain Name System (DNS)** is the phonebook of the Internet. It translates
 
 Without DNS, users would have to enter numerical IP addresses instead of website names.
 
---
+
 ## Resources
 
 - [Tutorialspoint - How the web works](https://www.tutorialspoint.com/web_developers_guide/web_how_it_works.htm)
