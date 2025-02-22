@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h1 class="text-2xl font-bold text-center mb-4">Signup</h1>
+        <form class="flex flex-col gap-4" action="home.html" >
+            <input type="text" placeholder="Enter your email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+            <input type="password" placeholder="Enter your password" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+            <input type="password" placeholder="Confirm your password" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">signup</button>
+            <section class="flex flex-row justify-center">
+                <h1 class="text-sm text-center">Already have an account?</h1>
+                <a href="login.html" class="text-blue-500 text-sm cursor-pointer hover:underline flex justify-center ml-2">Login</a>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
