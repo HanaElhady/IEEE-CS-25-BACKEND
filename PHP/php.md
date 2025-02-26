@@ -70,9 +70,9 @@ PHP’s hybrid approach was designed to:
 This approach balances **legacy support** with **modern development practices**, making PHP more adaptable.  
 
 
-🔗 
+
 ## Resources
--(W3schools - PHP Overview )(https://www.w3schools.com/PHP/php_intro.asp)  
--[Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
--(Geeks For Geeks - PHP echo vs print )[https://www.geeksforgeeks.org/php-echo-print]
--(Why Is PHP Partially Case-Sensitive? )(https://www.php.cn/faq/1796692981.html)
+- (W3schools - PHP Overview )(https://www.w3schools.com/PHP/php_intro.asp)  
+- [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
+- (Geeks For Geeks - PHP echo vs print )[https://www.geeksforgeeks.org/php-echo-print]
+- (Why Is PHP Partially Case-Sensitive? )(https://www.php.cn/faq/1796692981.html)
