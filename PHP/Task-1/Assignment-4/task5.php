@@ -8,3 +8,5 @@ echo '<br>' ;
 $points = $points - 5;
 
 echo $points; // 8;
+
+?>
