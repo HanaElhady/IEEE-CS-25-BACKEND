@@ -93,9 +93,52 @@ languages are interpreted. We shall have a look at some differences between prog
 |All programming languages are not scripting languages.	|All scripting languages are programming languages.|
 |Examples include C, C++, Java, Python, etc.|	Examples include Perl, PHP, JavaScript, etc.|
 
+---
+# Dynamically typed vs statically typed language
+
+| Feature                  | Statically-Typed Languages           | Dynamically-Typed Languages        |
+|--------------------------|--------------------------------------|------------------------------------|
+| **Type Checking**        | Done at compile-time                | Done at run-time                  |
+| **Variable Declaration** | Requires explicit type declaration  | No need to declare types          |
+| **Flexibility**          | Less flexible, strict type rules    | More flexible, allows type changes |
+| **Error Detection**      | Errors detected before execution    | Errors detected at run-time       |
+| **Performance**         | Faster at run-time (optimized code) | Slower at run-time (type checking needed) |
+| **Development Speed**    | Slower (strict typing needed)       | Faster (no type declarations)     |
+| **Examples**            | Java, C, C++, Swift, Rust, Kotlin   | Python, JavaScript, Ruby, PHP     |
+| **Best Use Cases**      | Large-scale applications, high performance | Rapid prototyping, scripting, flexibility |
+---
+# Assign by Value VS Assign by Reference
+| Concept                          | Pass-by-Value                             | Pass-by-Reference (Reference Value)  |
+|----------------------------------|------------------------------------------|-------------------------------------|
+| **Definition**                   | Copies the actual value of the variable | Copies the reference (memory address) of the variable |
+| **Modification Effect**           | Changes do not affect the original variable | Changes affect the original variable |
+| **Memory Address Sharing**        | Each variable has a unique memory address | Multiple variables can point to the same memory address |
+| **Mutability Impact**             | Works well with immutable types         | Can modify mutable objects directly |
+| **Error Risk**                    | Safer (prevents unintended modifications) | Risky (accidental changes affect all references) |
+| **Performance**                   | Slower for large objects (deep copies required) | Faster (only references are copied) |
+| **Common in**                     | Low-level languages (C, Go, Java - primitives) | High-level languages (Python, JavaScript, Ruby - objects) |
+
+### **Behavior in Different Languages**
+| Language   | Primitives (Numbers, Strings, etc.) | Objects (Arrays, Dicts, etc.) |
+|------------|-------------------------------------|--------------------------------|
+| **Go**      | Passed by Value                   | Passed by Value (Uses Pointers for References) |
+| **JavaScript** | Passed by Value                 | Passed by Reference Value |
+| **Ruby**     | Passed by Reference Value         | Passed by Reference Value |
+| **Perl**     | Passed by Reference Value         | Passed by Reference |
+| **C / Java** | Passed by Value                   | Passed by Reference (Objects via References) |
+
+### **Key Takeaways**
+- **Pass-by-Value** is common in lower-level languages for safety and memory isolation.
+- **Pass-by-Reference (Reference Value)** is used in higher-level languages for flexibility and efficiency.
+- **Mutable vs Immutable Types**: Even in pass-by-reference languages, immutable types behave like pass-by-value.
+- **Mixing Both**: Some languages (JavaScript, Java) mix strategies depending on whether a value is a primitive or an object.
+
+---
 ## Resources
 - [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
 - [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
 - [Geeks For Geeks - PHP echo vs print ](https://www.geeksforgeeks.org/php-echo-print)
 - [Why Is PHP Partially Case-Sensitive? ](https://www.php.cn/faq/1796692981.html)
 - (Scaler Academy - Programming language vs scripting language)(https://www.interviewbit.com/blog/scripting-language-vs-programming-language/)
+- [Pythonista Planet - Dynamically typed vs statically typed language. ](https://pythonistaplanet.com/difference-between-statically-and-dynamically-typed-languages/)
+- [FreeCodeCamp- Assign by Value VS Assign by Reference](https://www.freecodecamp.org/news/understanding-by-reference-vs-by-value-d49139beb1c4/)
