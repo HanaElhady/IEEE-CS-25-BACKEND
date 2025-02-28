@@ -78,18 +78,18 @@ languages are interpreted. We shall have a look at some differences between prog
 |------------------|----------------|
 |Is a type of computer language that consists of a set of instructions for communicating with computers.	| Is a kind of programming language that is used to automate the execution of operations in a runtime environment. |
 |Most programming languages are compiled. The translation overhead is incurred just once when the source is compiled; after that, it merely needs to be loaded and run.|	Most scripting languages are interpreted languages. They must be parsed, interpreted, and executed each time the program is run.|
-|Traditional programming languages are based on low-level languages.|	Scripting languages generally prefer high-level languages.|
+|Based on low-level languages.|	Prefer high-level languages.|
 |Execution of a program takes more time since they are compiled.	|Execution of a script takes less time as scripts are generally short.
 |It is used to create a new program or piece of software from the scratch.|	It is used to enhance an existing program or automate a specific task. A scripting language is used to control the behavior of a program.|
 |Most regular programming languages are stronger in data and control abstraction.|	Scripting languages generally emphasize the extensibility and richness of expressions.|
-| Runs or executes independently.|Runs inside a parent program.|
+|Runs or executes independently.|Runs inside a parent program.|
 |Generally requires many lines of code to accomplish a particular task.|Usually requires fewer lines than a programming language to accomplish a task.
 |Have high maintenance costs.|	Have a low maintenance cost.|
 |Generate .exe files.|Do not create .exe files.|
 |User interface design and graphic design are often partially supported by programming languages. |	User interface design, data types, and graphic design are all greatly aided by scripting languages.|
 |Programming languages are designed to make full-fledged software development easier.|	Scripting languages are used to assist programming languages and make coding easier and faster. They are typically used for open projects and web development.|
-|Programming language code takes a long time to develop since more code must be written (in most cases).|	Scripting languages take less time to code, as fewer lines (in most cases) of code are to be written.|
-|Programming languages are self-executable.|	Scripting languages require a host.|
+|Code takes a long time to develop since more code must be written (in most cases).|Less time to code, as fewer lines (in most cases) of code are to be written.|
+|Self-executable.|Require a host.|
 |All programming languages are not scripting languages.	|All scripting languages are programming languages.|
 |Examples include C, C++, Java, Python, etc.|	Examples include Perl, PHP, JavaScript, etc.|
 
