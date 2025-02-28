@@ -94,8 +94,8 @@ languages are interpreted. We shall have a look at some differences between prog
 |Examples include C, C++, Java, Python, etc.|	Examples include Perl, PHP, JavaScript, etc.|
 
 ## Resources
-- (W3schools - PHP Overview )(https://www.w3schools.com/PHP/php_intro.asp)  
+- [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
 - [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
-- (Geeks For Geeks - PHP echo vs print )[https://www.geeksforgeeks.org/php-echo-print]
-- (Why Is PHP Partially Case-Sensitive? )(https://www.php.cn/faq/1796692981.html)
+- [Geeks For Geeks - PHP echo vs print ](https://www.geeksforgeeks.org/php-echo-print)
+- [Why Is PHP Partially Case-Sensitive? ](https://www.php.cn/faq/1796692981.html)
 - (Scaler Academy - Programming language vs scripting language)[https://www.interviewbit.com/blog/scripting-language-vs-programming-language/]
