@@ -139,6 +139,6 @@ languages are interpreted. We shall have a look at some differences between prog
 - [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
 - [Geeks For Geeks - PHP echo vs print ](https://www.geeksforgeeks.org/php-echo-print)
 - [Why Is PHP Partially Case-Sensitive? ](https://www.php.cn/faq/1796692981.html)
-- (Scaler Academy - Programming language vs scripting language)(https://www.interviewbit.com/blog/scripting-language-vs-programming-language/)
+- [Scaler Academy - Programming language vs scripting language](https://www.interviewbit.com/blog/scripting-language-vs-programming-language/)
 - [Pythonista Planet - Dynamically typed vs statically typed language. ](https://pythonistaplanet.com/difference-between-statically-and-dynamically-typed-languages/)
 - [FreeCodeCamp- Assign by Value VS Assign by Reference](https://www.freecodecamp.org/news/understanding-by-reference-vs-by-value-d49139beb1c4/)
