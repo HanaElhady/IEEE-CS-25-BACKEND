@@ -5,7 +5,7 @@ $stop = 3;
 
 for($start ; $start >= $stop ; $start--) {
     if($start < 10 ) {
-        echo '0';
+        echo $end;
     }
     echo $start . "<br>";
 }
@@ -20,3 +20,4 @@ for($start ; $start >= $stop ; $start--) {
 03
 */
 ?>
+
