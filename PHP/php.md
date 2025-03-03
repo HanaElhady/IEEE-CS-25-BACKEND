@@ -138,9 +138,15 @@ languages are interpreted. We shall have a look at some differences between prog
 ## The `for` Loop  
 The `for` loop is an **iterative loop** that repeats a block of code **until a specific condition is met**. It is useful when the number of iterations is known.
 
-- ✅ Doesn't hide the iteration.
-- ✅ More complex than foreach.
-- ✅ Slower than foreach.
+### **Syntax**
+```php
+for (initialization; condition; increment/decrement) {
+    // Code to execute
+}
+```
+-  Doesn't hide the iteration.
+-  More complex than foreach.
+-  Slower than foreach.
 
 ## The `foreach ` Loop  
 The `foreach ` loop is specifically designed to iterate over arrays in PHP.
@@ -155,10 +161,10 @@ foreach ($array as $element) {
 foreach ($array as $key => $element) {
     // Code to execute
 }
-
-- ✅ Hides iteration for better readability.
-- ✅ Simpler than for loops.
-- ✅ Faster execution than for loops.
+```
+-  Hides iteration for better readability.
+-  Simpler than for loops.
+-  Faster execution than for loops.
 ---
 ## Resources
 - [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
