@@ -132,7 +132,33 @@ languages are interpreted. We shall have a look at some differences between prog
 - **Pass-by-Reference (Reference Value)** is used in higher-level languages for flexibility and efficiency.
 - **Mutable vs Immutable Types**: Even in pass-by-reference languages, immutable types behave like pass-by-value.
 - **Mixing Both**: Some languages (JavaScript, Java) mix strategies depending on whether a value is a primitive or an object.
+---
+# What is the difference between for and foreach loop in PHP?
 
+## The `for` Loop  
+The `for` loop is an **iterative loop** that repeats a block of code **until a specific condition is met**. It is useful when the number of iterations is known.
+
+- ✅ Doesn't hide the iteration.
+- ✅ More complex than foreach.
+- ✅ Slower than foreach.
+
+## The `foreach ` Loop  
+The `foreach ` loop is specifically designed to iterate over arrays in PHP.
+
+
+### **Syntax**
+```php
+foreach ($array as $element) {
+    // Code to execute
+}
+
+foreach ($array as $key => $element) {
+    // Code to execute
+}
+
+- ✅ Hides iteration for better readability.
+- ✅ Simpler than for loops.
+- ✅ Faster execution than for loops.
 ---
 ## Resources
 - [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
@@ -142,3 +168,4 @@ languages are interpreted. We shall have a look at some differences between prog
 - [Scaler Academy - Programming language vs scripting language](https://www.interviewbit.com/blog/scripting-language-vs-programming-language/)
 - [Pythonista Planet - Dynamically typed vs statically typed language. ](https://pythonistaplanet.com/difference-between-statically-and-dynamically-typed-languages/)
 - [FreeCodeCamp- Assign by Value VS Assign by Reference](https://www.freecodecamp.org/news/understanding-by-reference-vs-by-value-d49139beb1c4/)
+- [TutorialsPoint - What is the difference between for and foreach loop in PHP?](https://www.tutorialspoint.com/difference-between-for-and-foreach-in-php)
