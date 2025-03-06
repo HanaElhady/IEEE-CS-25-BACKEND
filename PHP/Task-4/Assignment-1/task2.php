@@ -13,7 +13,5 @@ if (isset($_COOKIE['site'])) {
     $siteCookies = $_COOKIE;
 
     echo "Your Color Is {$siteCookies['site']['color']} And Your Font Is {$siteCookies['site']['font']}";
-} else {
-    echo "No cookies found.";
-}
+} 
 ?>
