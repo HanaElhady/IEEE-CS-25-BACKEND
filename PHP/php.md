@@ -253,6 +253,12 @@ display_errors = On;
 ```
 
 ---
+# How PHP Executes Code.
+- Stage 1 : Lexing
+- Stage 2 : Parsing
+- Stage 3 : Compilation
+- Stage 4 : Interpretation
+---
 ## Resources
 - [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
 - [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
@@ -264,3 +270,4 @@ display_errors = On;
 - [TutorialsPoint - What is the difference between for and foreach loop in PHP?](https://www.tutorialspoint.com/difference-between-for-and-foreach-in-php)
 - [TutorialsPoint - Sessions vs Cookies](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies)
 - [W3schools - Error Handling in PHP ](https://www.w3schools.com/php/php_error.asp)
+- [SitePoint - How PHP Executes Code ](https://www.sitepoint.com/how-php-executes-from-source-code-to-render/)
