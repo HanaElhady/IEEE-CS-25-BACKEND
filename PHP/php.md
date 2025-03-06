@@ -166,6 +166,19 @@ foreach ($array as $key => $element) {
 -  Simpler than for loops.
 -  Faster execution than for loops.
 ---
+# Sessions vs Cookies
+
+| Basis of Comparison | Cookie | Session |
+| ------------------- |--------|---------|
+| Definition | client-side files that are stored on a local computer and contain user information | Server-side files that store user information |
+| Expiry | Expire after the user specified lifetime | The session ends when the user closes the browser or logs out of the program |
+| Data storage | Store a limited amount of data. | Store an unlimited amount of information. |
+| Capacity | Store up to a maximum of 4 KB of data in a browser. | There is a maximum memory restriction of 128 megabytes that a script may consume at one time. However, we are free to maintain as much data as we like within a session. |
+| Function | It is not necessary for us to execute a function in order to get cookies going because they are stored on the local computer. | Utilizing the session start()method is required before we can begin the session. |
+| Data Format | Store information in a text file. | The data is saved in an encrypted format during sessions.
+| Storage | Limited amount of data.| Unlimited amount of data. |
+---
+
 ## Resources
 - [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
 - [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
@@ -175,3 +188,4 @@ foreach ($array as $key => $element) {
 - [Pythonista Planet - Dynamically typed vs statically typed language. ](https://pythonistaplanet.com/difference-between-statically-and-dynamically-typed-languages/)
 - [FreeCodeCamp- Assign by Value VS Assign by Reference](https://www.freecodecamp.org/news/understanding-by-reference-vs-by-value-d49139beb1c4/)
 - [TutorialsPoint - What is the difference between for and foreach loop in PHP?](https://www.tutorialspoint.com/difference-between-for-and-foreach-in-php)
+  [TutorialsPoint - Sessions vs Cookies](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies)
