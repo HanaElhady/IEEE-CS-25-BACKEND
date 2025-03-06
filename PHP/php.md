@@ -178,7 +178,81 @@ foreach ($array as $key => $element) {
 | Data Format | Store information in a text file. | The data is saved in an encrypted format during sessions.
 | Storage | Limited amount of data.| Unlimited amount of data. |
 ---
+# Error Handling in PHP
 
+#### Error handling in PHP ensures that scripts manage errors properly instead of displaying raw error messages. Below are key techniques for error handling in PHP.
+
+1- Basic Error Handling with die() `Use die() to stop script execution if an error occurs.`
+
+```
+if (!file_exists("mytestfile.txt")) {
+    die("Error: The file does not exist.");
+}
+```
+
+2- Custom Error Handlers `Define a function to handle errors and use set_error_handler().`
+
+```
+function customError($errno, $errstr) {
+    echo "<b>Error:</b> [$errno] $errstr";
+}
+set_error_handler("customError");
+
+echo($undefinedVar); // Triggers an error
+```
+
+3- Triggering Errors with trigger_error() `Use trigger_error() to generate user-defined errors.`
+
+```
+$value = 2;
+if ($value >= 1) {
+    trigger_error("Value must be 1 or below", E_USER_WARNING);
+}
+```
+
+4- Logging Errors `PHP logs errors to a file or server logs by default. Use error_log() to log errors manually.`
+
+```
+error_log("Custom error message", 3, "errors.log");
+```
+
+5- Sending Error Reports via Email `Errors can be sent via email using error_log().`
+
+```
+function customError($errno, $errstr) {
+    error_log("Error: [$errno] $errstr", 1, "admin@example.com", "From: webmaster@example.com");
+}
+```
+
+6- PHP Error Levels
+
+| Value | Constant | Description |
+|-------|----------|-------------|
+| 1 | E_ERROR | Fatal run-time error, execution stops. |
+| 2 | E_WARNING | Non-fatal warning, script continues. |
+| 8 | E_NOTICE | Possible issue, script continues. |
+| 256 | E_USER_ERROR | Fatal user-generated error. |
+| 512 | E_USER_WARNING | Non-fatal user-generated warning. |
+| 1024 | E_USER_NOTICE | User-generated notice. |
+| 8191 | E_ALL | All errors and warnings.|
+
+
+### Best Practices
+
+- Log critical errors instead of displaying them.
+
+- Use `set_error_handler()` for custom error handling.
+
+- Avoid exposing error details to users for security reasons.
+
+### Pro Tip: For debugging, enable error reporting in php.ini:
+
+```
+error_reporting(E_ALL);
+display_errors = On;
+```
+
+---
 ## Resources
 - [W3schools - PHP Overview ](https://www.w3schools.com/PHP/php_intro.asp)  
 - [Scaler - PHP Error Types](https://www.scaler.com/topics/php-tutorial/types-of-errors-in-php)
