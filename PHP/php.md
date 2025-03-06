@@ -262,4 +262,5 @@ display_errors = On;
 - [Pythonista Planet - Dynamically typed vs statically typed language. ](https://pythonistaplanet.com/difference-between-statically-and-dynamically-typed-languages/)
 - [FreeCodeCamp- Assign by Value VS Assign by Reference](https://www.freecodecamp.org/news/understanding-by-reference-vs-by-value-d49139beb1c4/)
 - [TutorialsPoint - What is the difference between for and foreach loop in PHP?](https://www.tutorialspoint.com/difference-between-for-and-foreach-in-php)
-  [TutorialsPoint - Sessions vs Cookies](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies)
+- [TutorialsPoint - Sessions vs Cookies](https://www.tutorialspoint.com/What-is-the-difference-between-session-and-cookies)
+- [W3schools - Error Handling in PHP ](https://www.w3schools.com/php/php_error.asp)
