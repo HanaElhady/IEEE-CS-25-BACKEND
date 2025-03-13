@@ -1,6 +1,8 @@
 # Who invent OOP and Why
 
-“I made up the term ‘object-oriented’, and I can tell you I didn’t have C++ in mind.” ~ Alan Kay, OOPSLA ‘97
+> “I made up the term ‘object-oriented’, and I can tell you I didn’t have C++ in mind.”  
+> — Alan Kay, OOPSLA ‘97
+
 
  The big idea was to use encapsulated mini-computers in software which communicated via message passing rather than direct data sharing — to stop breaking down programs into separate “data structures” and “procedures”.
 
@@ -73,4 +75,4 @@ Traits allow for flexible code sharing without the tight coupling that comes wit
 - [Codecademy - Inheritance](https://www.codecademy.com/resources/blog/what-is-inheritance/)
 - [ Php Tutorial - PHP Polymorphism](https://www.phptutorial.net/php-oop/php-polymorphism/)
 - [ Php Tutorial - Php interface](https://www.phptutorial.net/php-oop/php-interface/)
-- [ Php Tutorial - Php Traits] (https://www.phptutorial.net/php-oop/php-traits/)
+- [ Php Tutorial - Php Traits](https://www.phptutorial.net/php-oop/php-traits/)
