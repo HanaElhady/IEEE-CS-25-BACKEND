@@ -68,9 +68,9 @@ Traits allow for flexible code sharing without the tight coupling that comes wit
 
  # Resourcss 
 
--[Medium - The Forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
--[Baeldung - Abstraction VS Encapsulation](https://www.baeldung.com/cs/abstraction-vs-encapsulation)
--[Codecademy - Inheritance](https://www.codecademy.com/resources/blog/what-is-inheritance/)
--[ Php Tutorial - PHP Polymorphism](https://www.phptutorial.net/php-oop/php-polymorphism/)
--[ Php Tutorial - Php interface](https://www.phptutorial.net/php-oop/php-interface/)
+- [Medium - The Forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
+- [Baeldung - Abstraction VS Encapsulation](https://www.baeldung.com/cs/abstraction-vs-encapsulation)
+- [Codecademy - Inheritance](https://www.codecademy.com/resources/blog/what-is-inheritance/)
+- [ Php Tutorial - PHP Polymorphism](https://www.phptutorial.net/php-oop/php-polymorphism/)
+- [ Php Tutorial - Php interface](https://www.phptutorial.net/php-oop/php-interface/)
 - [ Php Tutorial - Php Traits] (https://www.phptutorial.net/php-oop/php-traits/)
