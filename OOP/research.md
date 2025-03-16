@@ -171,7 +171,7 @@ MVC (**Model-View-Controller**) is a software design pattern that separates an a
 - **Ruby on Rails** (Ruby)  
 - **Angular** (TypeScript)  
 
-MVC is widely used in modern web and software development for its **structured, scalable, and maintainable** approach. 🚀
+MVC is widely used in modern web and software development for its **structured, scalable, and maintainable** approach. 
 ---
  # Resourcss 
 
