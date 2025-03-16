@@ -68,11 +68,121 @@ Inheritance is one of the core features of object-oriented programming. It’s a
 
 Traits allow for flexible code sharing without the tight coupling that comes with traditional inheritance.
 
+---
+
+# Late static binding & how it works
+
+Late Static Bindings (LSB) in PHP allow referencing the called class in a **static inheritance** context.  
+
+**How It Works:**  
+- LSB stores the class name from the last **non-forwarding call** (the explicitly named class).  
+- `static::` resolves at **runtime**, unlike `self::`, which binds to the defining class.  
+- `get_called_class()` retrieves the name of the called class.  
+
+**Key Differences:**  
+| Feature           | `self::` | `static::` |
+|------------------|---------|-----------|
+| **Binding Type** | Early (compile-time) | Late (runtime) |
+| **Resolves To** | Defining class | Called class |
+| **Use Case** | Fixed method resolution | Dynamic method resolution |
+
+**Why Use LSB?**  
+- Enables **runtime polymorphism** in static contexts.  
+- Supports **overridable** static methods in inheritance chains.  
+
+**LSB ensures that static methods behave dynamically based on the called class instead of the class where they are defined.**
+---
+
+# Using OOP with MySQL (PDO & MySQLi)
+
+**PHP Data Objects (PDO)** provides a **database abstraction layer** that allows executing SQL queries across multiple database systems (MySQL, PostgreSQL, Oracle, etc.) using the same functions.  
+
+**Why Use PDO?**  
+- Supports multiple database systems.  
+- Allows easy switching between databases without code changes.  
+- Provides a secure way to handle database operations using prepared statements.  
+
+**CRUD Operations in PHP with PDO:**  
+1. **Fetch** – Retrieve and display user data.  
+2. **Insert** – Add new user data to the database.  
+3. **Update** – Modify existing records.  
+4. **Delete** – Remove records from the database.  
+
+**Approach Used:**  
+- **Object-Oriented Programming (OOP)** in PHP.  
+- **Bootstrap** for styling forms and tables.  
+
+This implementation ensures a **secure, scalable, and reusable** database interaction method using PDO. 
+
+---
+
+# Factory PatternAnonymous Classes
+
+The factory pattern defers instantiation logic of a parent abstract class to its concrete sub-classes. At the time of object creation, the specific class type may not be known, in which a creator class’ factory method is used to decouple this identifying logic. This is typically done through the methods, parameters, and a switch statement.
+
+---
+
+# Anonymous Classes
+
+**What are Anonymous Classes?**  
+Anonymous classes in PHP allow developers to **declare and instantiate classes on-the-fly** without a formal class definition.  
+
+**Key Features:**  
+- Introduced in **PHP 7**.  
+- Useful for **one-time** or **short-lived objects**.  
+- Reduces **boilerplate code** for simple tasks.  
+- Can **extend classes** and **implement interfaces** like regular classes.  
+
+**Use Cases:**  
+- Creating quick **mock objects**.  
+- Implementing **simple callbacks**.  
+- Avoiding **global class definitions** for small logic blocks.  
+
+Anonymous classes enhance **flexibility and code organization** by providing a **lightweight alternative** to traditional class definitions.
+---
+
+# MVC Architecture
+
+**What is MVC?**  
+MVC (**Model-View-Controller**) is a software design pattern that separates an application into three main components:  
+
+- **Model**: Manages the data, business logic, and application rules.  
+- **View**: Handles the user interface and presents data from the Model.  
+- **Controller**: Processes user input, updates the Model, and refreshes the View.  
+
+**Key Benefits:**  
+- **Separation of Concerns** – Enhances code organization and maintainability.  
+- **Reusability** – Components can be reused across projects.  
+- **Scalability** – Supports modular application growth.  
+- **Testability** – Each component can be tested independently.  
+
+**Challenges:**  
+- Complexity in small applications.  
+- Requires a learning curve for new developers.  
+- Higher overhead due to component synchronization.  
+
+**Implementation Strategies:**  
+- **Use MVC frameworks** (Django, Angular, Ruby on Rails).  
+- **Ensure modular design** for better maintainability.  
+- **Adopt asynchronous programming** for efficient request handling (e.g., async database queries, AJAX for dynamic UI updates).  
+
+**Popular MVC Frameworks:**  
+- **Django** (Python)  
+- **Ruby on Rails** (Ruby)  
+- **Angular** (TypeScript)  
+
+MVC is widely used in modern web and software development for its **structured, scalable, and maintainable** approach. 🚀
+---
  # Resourcss 
 
-- [Medium - The Forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
-- [Baeldung - Abstraction VS Encapsulation](https://www.baeldung.com/cs/abstraction-vs-encapsulation)
-- [Codecademy - Inheritance](https://www.codecademy.com/resources/blog/what-is-inheritance/)
+- [ Medium - The Forgotten History of OOP](https://medium.com/javascript-scene/the-forgotten-history-of-oop-88d71b9b2d9f)
+- [ Baeldung - Abstraction VS Encapsulation](https://www.baeldung.com/cs/abstraction-vs-encapsulation)
+- [ Codecademy - Inheritance](https://www.codecademy.com/resources/blog/what-is-inheritance/)
 - [ Php Tutorial - PHP Polymorphism](https://www.phptutorial.net/php-oop/php-polymorphism/)
 - [ Php Tutorial - Php interface](https://www.phptutorial.net/php-oop/php-interface/)
 - [ Php Tutorial - Php Traits](https://www.phptutorial.net/php-oop/php-traits/)
+- [ Php - Late static binding & how it works](https://www.php.net/manual/en/language.oop5.late-static-bindings.php)
+- [ Codex World - Using OOP with MySQL (PDO & MySQLi)](https://www.codexworld.com/php-oop-crud-operations-pdo-extension-mysql/)
+- [ Codecademy - Factory PatternAnonymous Classes](https://www.codecademy.com/resources/docs/general/creational-design-patterns/factory-pattern)
+- [ Slingacademy - Anonymous Classes](https://www.slingacademy.com/article/anonymous-classes-in-php-a-practical-guide/)
+- [ Geeks For Geeks - MVC Architecture](https://www.geeksforgeeks.org/mvc-architecture-system-design/)
