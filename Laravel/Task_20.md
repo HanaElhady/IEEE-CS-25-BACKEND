@@ -51,15 +51,6 @@ Service providers are at the **core of the Laravel bootstrapping process**:
 - Application creation → Service providers registered → Request handled.
 - Managing and understanding service providers (e.g., `AppServiceProvider`) is key for organizing large Laravel applications efficiently.
 
-## Summary
-
-- Request enters through `index.php`
-- Application and service container are initialized
-- Kernels and middleware process the request
-- Service providers configure all major features
-- Request routed and handled
-- Response sent back to the client
-
 # Laravel Routing (v12.x)
 
 ## Basic Routing
@@ -139,7 +130,7 @@ Cache::put('key', 'value', $seconds);
 ```
 
 
-## 📌 Common Facades:
+## Common Facades:
 - `Cache` - Caching system
 - `Route` - Routing system
 - `DB` - Database operations
