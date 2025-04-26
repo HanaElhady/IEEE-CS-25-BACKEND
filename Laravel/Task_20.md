@@ -149,6 +149,6 @@ Cache::put('key', 'value', $seconds);
 
 
 ## Resources :
--[Laravel - Request Lifecycle](https://laravel.com/docs/12.x/lifecycle)
--[Laravel - Routing](https://laravel.com/docs/12.x/routing)
--[Laravel - Facades](https://laravel.com/docs/11.x/facades)
+- [Laravel - Request Lifecycle](https://laravel.com/docs/12.x/lifecycle)
+- [Laravel - Routing](https://laravel.com/docs/12.x/routing)
+- [Laravel - Facades](https://laravel.com/docs/11.x/facades)
