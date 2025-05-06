@@ -280,7 +280,7 @@ By using eager loading and optimizing queries, you can significantly reduce the 
 - [Laravel - Facades](https://laravel.com/docs/11.x/facades)
 - [Dev - Blade Templates](https://dev.to/icornea/laravel-blade-template-engine-a-beginners-guide-54bi#:~:text=Blade%20is%20Laravel%E2%80%99s%20built-in%20template%20engine%20that%20allows,making%20development%20much%20more%20efficient.%20Why%20Use%20Blade%3F)
 - [Laravel - ORM](https://laravel.com/docs/5.0/eloquent)
-- (Laravel - Eloquent: Relationships)[https://laravel.com/docs/12.x/eloquent-relationships]
-- (Sling Academ - Attach(), Detach(), and Sync() methods)[https://www.slingacademy.com/article/laravel-eloquent-attach-detach-sync-methods/]
-- (Medium - N-1 Problem)[https://medium.com/@moumenalisawe/n-1-query-problem-in-laravel-causes-effects-and-solutions-740cefa44306]
+- [Laravel - Eloquent: Relationships](https://laravel.com/docs/12.x/eloquent-relationships)
+- [Sling Academ - Attach(), Detach(), and Sync() methods](https://www.slingacademy.com/article/laravel-eloquent-attach-detach-sync-methods/)
+- [Medium - N-1 Problem](https://medium.com/@moumenalisawe/n-1-query-problem-in-laravel-causes-effects-and-solutions-740cefa44306)
 - [Geeks For Geeks - Difference Between XSS and CSRF](https://www.geeksforgeeks.org/difference-between-xss-and-csrf/)
