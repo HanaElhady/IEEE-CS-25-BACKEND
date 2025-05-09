@@ -278,6 +278,90 @@ Livewire is a full-stack framework for Laravel that makes building dynamic inter
 
 ---
 
+# Laravel Packages
+
+### 1. **Spatie Laravel Permission**
+
+This package allows you to manage user roles and permissions in a Laravel application.
+
+* **Use Case**: Assign roles like 'admin' or 'editor' to users and control access to specific parts of your application.
+* **Example**:
+
+```php
+  $user->assignRole('admin');
+  if ($user->hasPermissionTo('edit articles')) {
+      // Allow editing
+  }
+```
+
+
+
+---
+
+### 2. **Laravel Debugbar**
+
+Integrates the PHP Debug Bar with Laravel, providing a visual interface for debugging.
+
+* **Use Case**: Monitor queries, routes, and other debug information during development.
+* **Example**:
+
+```php
+  // After installing, the debug bar appears automatically in your application.
+  // No additional code is required for basic usage.
+```
+
+([Laravel Daily][1])
+
+---
+
+### 3. **Laravel Excel (SpartnerNL/Laravel-Excel)**
+
+Facilitates importing and exporting Excel and CSV files in Laravel.
+
+* **Use Case**: Generate reports or import data from spreadsheets.
+* **Example**:
+
+```php
+  use App\Exports\UsersExport;
+  return Excel::download(new UsersExport, 'users.xlsx');
+```
+
+
+
+---
+
+### 4. **Laravel IDE Helper (barryvdh/laravel-ide-helper)**
+
+Generates helper files to improve IDE support for Laravel projects.
+
+* **Use Case**: Enhance code completion and navigation in IDEs like PhpStorm or VS Code.
+* **Example**:
+
+```bash
+  php artisan ide-helper:generate
+```
+
+([Laravel Daily][1])
+
+---
+
+### 5. **Laravel Activitylog (spatie/laravel-activitylog)**
+
+Logs activities within your Laravel application, such as model events.
+
+* **Use Case**: Track changes made to models for auditing purposes.
+* **Example**:
+
+```php
+  activity()
+     ->performedOn($user)
+     ->causedBy(auth()->user())
+     ->log('Updated user profile');
+```
+
+([Laravel Daily][1])
+
+---
 
 
 ## Resources :
@@ -291,3 +375,4 @@ Livewire is a full-stack framework for Laravel that makes building dynamic inter
 - [Medium - N-1 Problem](https://medium.com/@moumenalisawe/n-1-query-problem-in-laravel-causes-effects-and-solutions-740cefa44306)
 - [Geeks For Geeks - Difference Between XSS and CSRF](https://www.geeksforgeeks.org/difference-between-xss-and-csrf/)
 - [Laravel Livewire - What is Livewire?](https://laravel-livewire.com/)
+- [Laravel Daily - Laravel Packages](https://laraveldaily.com/packages)
