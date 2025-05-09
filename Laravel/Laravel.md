@@ -310,8 +310,6 @@ Integrates the PHP Debug Bar with Laravel, providing a visual interface for debu
   // No additional code is required for basic usage.
 ```
 
-([Laravel Daily][1])
-
 ---
 
 ### 3. **Laravel Excel (SpartnerNL/Laravel-Excel)**
@@ -341,8 +339,6 @@ Generates helper files to improve IDE support for Laravel projects.
   php artisan ide-helper:generate
 ```
 
-([Laravel Daily][1])
-
 ---
 
 ### 5. **Laravel Activitylog (spatie/laravel-activitylog)**
@@ -359,7 +355,6 @@ Logs activities within your Laravel application, such as model events.
      ->log('Updated user profile');
 ```
 
-([Laravel Daily][1])
 
 ---
 
