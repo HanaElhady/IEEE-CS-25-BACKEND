@@ -270,7 +270,13 @@ By using eager loading and optimizing queries, you can significantly reduce the 
 | Attack Type   | Injects code into website | Sends fake user requests |
 | Danger Level  | More harmful              | Less harmful             |
 
+---
 
+# What is Livewire? 
+
+Livewire is a full-stack framework for Laravel that makes building dynamic interfaces simple, without leaving the comfort of Laravel.
+
+---
 
 
 
@@ -284,3 +290,4 @@ By using eager loading and optimizing queries, you can significantly reduce the 
 - [Sling Academ - Attach(), Detach(), and Sync() methods](https://www.slingacademy.com/article/laravel-eloquent-attach-detach-sync-methods/)
 - [Medium - N-1 Problem](https://medium.com/@moumenalisawe/n-1-query-problem-in-laravel-causes-effects-and-solutions-740cefa44306)
 - [Geeks For Geeks - Difference Between XSS and CSRF](https://www.geeksforgeeks.org/difference-between-xss-and-csrf/)
+- [Laravel Livewire - What is Livewire?](https://laravel-livewire.com/)
